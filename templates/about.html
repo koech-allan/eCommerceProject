@@ -1,0 +1,65 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>About Us</h1>
+            <p><a href="{% url 'home-page' %}">Home</a></p>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <img class="pic1 mt-4" src="{% static 'images/about-us.jpg' %}" alt="">
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <h2 class="font-weight-bold">Who we are?</h2>
+                <p>Contextual advertising programs sometimes have strict policies that need to be adhered too.
+                    Let’s take Google as an example.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <h2 class="font-weight-bold">What we do?</h2>
+                <p>In this digital generation where information can be easily obtained within seconds,
+                    business cards still have retained their importance.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <h2 class="font-weight-bold">Why choose us?</h2>
+                <p>A two or three storey house is the ideal way to maximise the piece of earth on which our home sits,
+                    but for older or infirm people.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center text-danger mt-4">OUR TEAM</h2>
+    <h1 class="text-center font-weight-bold">Meet Our Team</h1>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-3 col-sm-3 col-lg-3">
+            <img src="{% static 'images/team-2.jpg' %}" alt="">
+                <h4 class="text-center font-weight-bold mt-4">John Smith</h4>
+                <h5 class="text-center font-weight-light font-italic">Fashion Design</h5>
+        </div>
+        <div class="col-md-3 col-sm-3 col-lg-3">
+            <img src="{% static 'images/team-3.jpg' %}" alt="">
+            <h4 class="text-center font-weight-bold mt-4">Christine Wine</h4>
+            <h5 class="text-center font-weight-light font-italic">C.E.O</h5>
+        </div>
+        <div class="col-md-3 col-sm-3 col-lg-3">
+            <img src="{% static 'images/team-1.jpg' %}" alt="">
+            <h4 class="text-center font-weight-bold mt-4">Sean Robbins</h4>
+            <h5 class="text-center font-weight-light font-italic">Manager</h5>
+        </div>
+        <div class="col-md-3 col-sm-3 col-lg-3">
+            <img src="{% static 'images/team-4.jpg' %}" alt="">
+            <h4 class="text-center font-weight-bold mt-4">Lucy Myers</h4>
+            <h5 class="text-center font-weight-light font-italic">Delivery</h5>
+        </div>
+        </div>
+    </div>
+    
+
+
+{% endblock %}
